@@ -16,7 +16,8 @@ import {
   ShoppingBag,
   Factory,
 } from "lucide-react";
-import { HeroSection } from "@/components/sections/HeroSection";
+import { HeroSlider } from "@/components/sections/HeroSlider";
+import { SolutionsCarousel } from "@/components/sections/SolutionsCarousel";
 import { PartnerTrustStrip } from "@/components/sections/PartnerTrustStrip";
 import { QuickFeasibilityCheck } from "@/components/sections/QuickFeasibilityCheck";
 import { SolutionCategoryGrid } from "@/components/sections/SolutionCategoryGrid";
@@ -108,13 +109,16 @@ export default function HomePage() {
 
   return (
     <>
-      {/* 1. Hero Section */}
-      <HeroSection />
+      {/* 1. Brixbyte-Style Dynamic Hero Banner Slider */}
+      <HeroSlider />
 
-      {/* 2. Partner Trust Strip */}
+      {/* 2. Partner Trust Strip with Official Tata Tele Logo */}
       <PartnerTrustStrip />
 
-      {/* 2b. Instant Feasibility Checker (Inspired by Brixbyte / TTBS) */}
+      {/* 2b. Brixbyte-Style Solutions Portfolio Carousel Slider */}
+      <SolutionsCarousel />
+
+      {/* 2c. Instant Feasibility Checker */}
       <QuickFeasibilityCheck />
 
       {/* 3. Business Challenges to Solutions Mapping */}
